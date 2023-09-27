@@ -730,17 +730,21 @@ header.white .sub-logo {
 }
 .pop-up::before {
     content: "";
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    overflow: hidden;
     z-index: 1;
 }
 .pop-up .wrap {
-    justify-content: center
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    overflow: hidden;
+    z-index: 2;
 }
 .pop-up .box {
     position: absolute;
