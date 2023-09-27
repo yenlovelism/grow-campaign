@@ -9,36 +9,76 @@
     <link rel="shortcut icon" href="./img/favicon.ico">
     <link rel="stylesheet" href="./css/font/font.css">
     <link rel="stylesheet" href="./css/fontawesome/all.min.css">
+    <link rel="stylesheet" href="./css/aos.css">
     <link rel="stylesheet" href="./css/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/jquery.min.js"></script>
     <script src="./js/gsap.min.js"></script>
     <script src="./js/ScrollTrigger.min.js"></script>
+    <script src="./js/ScrollToPlugin.min.js"></script>
+    <script src="./js/aos.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
 </head>
 <body>
-    <main>
-        <!--header-->
-        <header>
+    <!--header-->
+    <header>
+        <div class="wrap flex">
+            <div class="logo">
+                <a href="/index.html">
+                    <img src="./img/logo.png" alt="컴패션 로고">
+                </a>
+            </div>
+            <div class="sub-logo">
+                <strong>현대인의<br>성장 캠페인</strong>
+            </div>
+        </div>
+    </header>
+    <!--content-->
+    <main id="content">
+        <!--cover page1-->
+        <section id="cover" class="cover page page1">
             <div class="wrap flex">
-                <div class="logo">
-                    <a href="/index.html">
-                        <img src="./img/logo.png" alt="컴패션 로고">
-                    </a>
+                <div class="top-area">
+                    <div>
+                        <strong>Project Type</strong>
+                        <span>컴패션 지원 포트폴리오</span>
+                    </div>
+                    <div>
+                        <strong>Period</strong>
+                        <span>2023.09.13 - 2023.09.24</span>
+                    </div>
+                    <div>
+                        <strong>Tools</strong>
+                        <span>Figma, HTML, CSS, JavaScript</span>
+                    </div>
                 </div>
-                <div class="sub-logo">
-                    <strong>현대인의<br>성장 캠페인</strong>
+                <div class="text-area">
+                    <div class="page-text">
+                        <span>현대인의 성장 캠페인</span>
+                        <h2>요즘 무엇을
+                            <span class="po-font po-big">성장</span> 시키고 있나요?
+                        </h2>
+                    </div>
+                </div>
+                <div class="text-area overview">
+                    <div class="page-text">
+                        <strong>Over View</strong>
+                        <p>
+                            요즘 현대인들은 새로운 사람들을 만나면 서로의 ‘취미활동' 에 대해 묻고 대화하는 것이 필수적인 부분이라고 느꼈습니다. 누구나 SNS활동을 즐기고 자신의 일상을 공유하는 것이 자연스러워 지면서 골프, 테니스, 헬스 등 자신을 발전시킬 수 있는 다양한 활동들을 드러내고 표현하는 것이 당연한 일이 되었습니다. ‘요즘 뭐 배우고 있어?’. ‘요즘 뭐하면서 지내?’ 라고 묻고 ‘수영, 악기, 블로그' 등 열심히 하고 있는 자신만의 취미・특기 활동을 자랑스럽게 표현하는 이 일상이 ‘참 다방면으로 열심히 사는 현대인들’로 다가와 멋지고 트렌디하게 느껴지기도 했지만 한편으로는 좀 씁쓸하기도 했습니다. 좋은 일상 만을 골라 공유하는 SNS와 열심히 살아야만 하는 세상 뒤편에는 사실 여전히 실패의 상황, 걱정으로 가득차고 낙심하는 마음, 외로운 마음들이 있을 것이기 때문입니다.  또한 고차원적인 취미나 특기 활동은 커녕 일상을 침해받고 기본적 생활의 결핍과 싸우고 있을 소외된 현대인들도 분명이 존재하고 있을 것이기 때문입니다.
+                            그 마음으로부터 이 프로젝트를 시작하게 되었습니다. 현대인들의 다방면으로 성장하려고 노력하는 행보 뒤편에 있을 공허하고 외로운 마음을 채우고 동시에 전인적 성장이 필요한 컴패션 어린이들의 성장 또한 동행할 수 있었으면 좋겠다. 라는 소망을 바탕으로 제작했습니다.  ‘요즘 무엇을 성장시키고 있어?'라고 묻기 전에 먼저 ‘요즘 잘 지내고 있어? 별 일 없지?’라고 평안과 안녕을 먼저 묻고 싶은 마음으로 현대인의 성장 캠페인 페이지를 제작했습니다.
+                        </p>
+                    </div>
                 </div>
             </div>
-        </header>
+        </section>
         <!--page1-->
         <section id="page1" class="page page1">
             <div class="wrap flex">
                 <div class="text-area">
                     <h1>
                         요즘 무엇을<br>
-                        <span class="po-font po-big">성장</span> 시키고 있어?
+                        <span class="po-font po-big">성장</span> 시키고 있나요?
                     </h1>
                 </div>
                 <div class="img-area">
@@ -82,8 +122,8 @@
             <div class="wrap flex">
                 <div class="text-area">
                     <p class="page-text">
-                        한 사람에겐 참<br>
-                        성장해야 하는 것들이 많아
+                        한 사람에겐<br>
+                        성장해야 하는 것들이 아주 많죠
                     </p>
                 </div>
                 <div class="img-area">
@@ -101,13 +141,15 @@
                 <div class="text-area">
                     <p class="page-text">
                         그런데 혹시,<br>
-                        너의 성장과 함께<br>
+                        당신의 성장과 함께<br>
                         <span class="po-bold">한 어린이의 삶을 성장</span>시킬 수 있다면<br>
-                        해보지 않을래?
+                        함께 해보실래요?
                     </p>
                 </div>
                 <div class="img-area">
-                    
+                    <img class="img right-hand" src="./img/right-hand.png" alt="오른쪽 손 이미지">
+                    <img class="img heart" src="./img/big-heart.png" alt="하트 이미지">
+                    <img class="img left-hand" src="./img/left-hand.png" alt="왼쪽 손 이미지">
                 </div>
             </div>
         </section>
@@ -115,7 +157,7 @@
         <section id="page4" class="page page4 heightauto">
             <div class="wrap">
                 <div class="text-area">
-                    <p class="page-text">
+                    <p class="page-text" data-aos="fade-up">
                         컴패션에서는 월 45,000원으로<br><br>
                         <span class="po-big">한 어린이가 자립 가능한 성인이 될 때까지<br>
                         <span class="po-bold">전인적으로 양육</span>합니다.</span>
@@ -123,7 +165,7 @@
                 </div>
                 <div class="img-area circle">
                     <ul class="m30">
-                        <li class="circle-box box">
+                        <li class="circle-box box" data-aos="flip-left">
                             <img src="./img/book-icon.png" alt="책 아이콘">
                             <strong class="box-tit">지적</strong>
                             <span class="box-text">
@@ -131,7 +173,7 @@
                                 동기부여와 기술
                             </span>
                         </li>
-                        <li class="circle-box box">
+                        <li class="circle-box box" data-aos="flip-left" data-aos-delay="200">
                             <img src="./img/heart-y-icon.png" alt="노란색하트 아이콘">
                             <strong class="box-tit">사회정서적</strong>
                             <span class="box-text">
@@ -139,7 +181,7 @@
                                 다른 사람들과 교류
                             </span>
                         </li>
-                        <li class="circle-box box">
+                        <li class="circle-box box" data-aos="flip-left" data-aos-delay="400">
                             <img src="./img/health-icon.png" alt="건강 아이콘">
                             <strong class="box-tit">신체적</strong>
                             <span class="box-text">
@@ -147,7 +189,7 @@
                                 좋은 습관
                             </span>
                         </li>
-                        <li class="circle-box box">
+                        <li class="circle-box box" data-aos="flip-left" data-aos-delay="600">
                             <img src="./img/cross-icon.png" alt="십자가 아이콘">
                             <strong class="box-tit">영적</strong>
                             <span class="box-text">
@@ -158,79 +200,79 @@
                     </ul>
                 </div>
                 <div class="text-area m60">
-                    <p class="page-text">
+                    <p class="page-text" data-aos="fade-up">
                         후원자님이 보내주신 후원금을 통해 연령벌로 어린이와 청소년들 위한<br>
                         <span class="po-big po-bold">세부적이고 전문적인 양육 커리큘럼</span>을 전 세계 컴패션 어린이센터에서 진행하고 있습니다.
                     </p>
                 </div>
                 <div class="img-area graph">
-                   <div class="grow-graph-img m30">
+                <div class="grow-graph-img m30" data-aos="zoom-in">
                         <img src="./img/grow-graph.png" alt="성장그래프 이미지">
-                   </div>
-                   <div class="grow-graph-text m30">
+                </div>
+                <div class="grow-graph-text m30">
                         <ul>
-                            <li>
+                            <li data-aos="fade-in">
                                 <strong class="box-tit">
                                     태아영아(0-만 1세)<br>
                                     <span class="po-color2">아기와 엄마 살리기</span>
                                 </strong>
-                                <button class="view-btn s-btn">자세히보기</button>
+                                <button onclick="curriculum1()" class="view-btn s-btn">자세히보기</button>
                                 <p class="box-text">
-                                  내용   
+                                내용   
                                 </p>
                             </li>
-                            <li>
+                            <li data-aos="fade-in" data-aos-delay="200">
                                 <strong class="box-tit">
                                     유아기(만 1-5세)
                                 </strong>
-                                <button class="view-btn s-btn m30">자세히보기</button>
+                                <button onclick="curriculum2()" class="view-btn s-btn m30">자세히보기</button>
                                 <p class="box-text">
-                                  내용   
+                                내용   
                                 </p>
                             </li>
-                            <li>
+                            <li data-aos="fade-in" data-aos-delay="400">
                                 <strong class="box-tit">
                                     아동기(5-12세)
                                 </strong>
-                                <button class="view-btn s-btn m30">자세히보기</button>
+                                <button onclick="curriculum3()" class="view-btn s-btn m30">자세히보기</button>
                                 <p class="box-text">
-                                  내용   
+                                내용   
                                 </p>
                             </li>
-                            <li>
+                            <li data-aos="fade-in" data-aos-delay="600">
                                 <strong class="box-tit">
                                     청소년기(12-18세)
                                 </strong>
-                                <button class="view-btn s-btn m30">자세히보기</button>
+                                <button onclick="curriculum4()" class="view-btn s-btn m30">자세히보기</button>
                                 <p class="box-text">
-                                  내용   
+                                내용   
                                 </p>
                             </li>
-                            <li>
+                            <li data-aos="fade-in" data-aos-delay="800">
                                 <strong class="box-tit">
                                     자립준비기(18-22세)
                                 </strong>
-                                <button class="view-btn s-btn m30">자세히보기</button>
+                                <button onclick="curriculum4()" class="view-btn s-btn m30">자세히보기</button>
                                 <p class="box-text">
-                                  내용   
+                                내용   
                                 </p>
                             </li>
                         </ul>
-                   </div>
+                    </div>
                 </div>
             </div>
         </section>
         <!--page5-->
         <section id="page5" class="page page5 bg-white">
             <div class="wrap flex">
-                <h3 class="page-tit">
+                <h3 class="page-tit" data-aos="fade-up">
                     당신과 함께할<br>
                     컴패션 어린이 성장 과정
                 </h3>
-                <div class="swiper-area m60">
+                <div class="swiper-area m60" data-aos="fade-left">
                     <div class="swiper process-Swiper">
                         <div class="swiper-wrapper">
-                          <div class="swiper-slide">
+                        <div class="swiper-slide">
                             <div class="box">
                                 <strong class="box-tit">
                                     어린이 등록
@@ -242,8 +284,8 @@
                                 </p>
                                 <img src="./img/process-img1.png" alt="어린이 등록 사진">
                             </div>
-                          </div>
-                          <div class="swiper-slide">
+                        </div>
+                        <div class="swiper-slide">
                             <div class="box">
                                 <strong class="box-tit">
                                     가정방문
@@ -256,8 +298,8 @@
                                 </p>
                                 <img src="./img/process-img2.png" alt="가정방문 사진">
                             </div>
-                          </div>
-                          <div class="swiper-slide">
+                        </div>
+                        <div class="swiper-slide">
                             <div class="box">
                                 <strong class="box-tit">
                                     인생 성장 보고서
@@ -272,8 +314,8 @@
                                 </p>
                                 <img src="./img/process-img3.png" alt="인생성장보고서 사진">
                             </div>
-                          </div>
-                          <div class="swiper-slide">
+                        </div>
+                        <div class="swiper-slide">
                             <div class="box">
                                 <strong class="box-tit">
                                     My PLAN for Tomorrow
@@ -287,8 +329,8 @@
                                 </p>
                                 <img src="./img/process-img4.png" alt="My plan for Tomorrow 사진">
                             </div>
-                          </div>
-                          <div class="swiper-slide">
+                        </div>
+                        <div class="swiper-slide">
                             <div class="box">
                                 <strong class="box-tit">
                                     졸업
@@ -301,7 +343,7 @@
                                 </p>
                                 <img src="./img/process-img5.png" alt="졸업 사진">
                             </div>
-                          </div>
+                        </div>
                         </div>
                     </div>
                     <div class="swiper-button-next"></div>
@@ -312,7 +354,7 @@
         <!--page6-->
         <section id="page6" class="page page6 bg-white">
             <div class="wrap flex">
-                <h3 class="page-tit m30">
+                <h3 class="page-tit m30" data-aos="fade-up">
                     어린이와 함께할<br>
                     당신의 마음 성장
                 </h3>
@@ -381,7 +423,7 @@
         <section id="page7" class="page page7 heightauto bg-white">
             <div class="wrap flex">
                 <ul>
-                    <li class="box">
+                    <li class="box" data-aos="fade-up">
                         <div class="box-img">
                             <img src="./img/info-icon.png" alt="어린이 정보 아이콘">
                         </div>
@@ -394,7 +436,7 @@
                             2년마다 어린이의 성장 보고서를 받아볼 수 있어요.
                         </p>
                     </li>
-                    <li class="box">
+                    <li class="box" data-aos="fade-up" data-aos-delay="200">
                         <div class="box-img">
                             <img src="./img/paper-icon.png" alt="사업 성과 보고서 아이콘">
                         </div>
@@ -406,7 +448,7 @@
                             매년 사업성과보고서에서 확인할 수 있어요.
                         </p>
                     </li>
-                    <li class="box">
+                    <li class="box" data-aos="fade-up" data-aos-delay="400">
                         <div class="box-img">
                             <img src="./img/letter-icon.png" alt="편지 주고 받기 아이콘">
                         </div>
@@ -418,7 +460,7 @@
                             쉽고 빠르게 편지를 주고 받을 수 있어요.
                         </p>
                     </li>
-                    <li class="box">
+                    <li class="box" data-aos="fade-up">
                         <div class="box-img">
                             <img src="./img/handshake-icon.png" alt="어린이와의 동행 아이콘">
                         </div>
@@ -432,7 +474,7 @@
                             서로의 일상을 나누며 마음이 더 깊어진답니다.
                         </p>
                     </li>
-                    <li class="box">
+                    <li class="box" data-aos="fade-up" data-aos-delay="200">
                         <div class="box-img">
                             <img src="./img/gift-icon.png" alt="캠페인 참여 아이콘">
                         </div>
@@ -444,7 +486,7 @@
                             후원자와 만들어가는 다양한 활동에 참여할 수 있어요.
                         </p>
                     </li>
-                    <li class="box">
+                    <li class="box" data-aos="fade-up" data-aos-delay="400">
                         <div class="box-img">
                             <img src="./img/protect-icon.png" alt="애드보킷 활동 아이콘">
                         </div>
@@ -456,7 +498,7 @@
                             다양한 활동을 통해 어린이들의 옹호자가 될 수 있어요.
                         </p>
                     </li>
-                    <li class="box">
+                    <li class="box" data-aos="fade-up">
                         <div class="box-img">
                             <img src="./img/plane-icon.png" alt="비전트립 아이콘">
                         </div>
@@ -468,7 +510,7 @@
                             컴패션 비전트립에 참가하세요.
                         </p>
                     </li>
-                    <li class="box">
+                    <li class="box" data-aos="fade-up" data-aos-delay="200">
                         <div class="box-img">
                             <img src="./img/graduation-icon.png" alt="함께하는 졸업식 아이콘">
                         </div>
@@ -480,7 +522,7 @@
                             컴패션을 수료하면 컴패션졸업식에 참석하실 수 있습니다.
                         </p>
                     </li>
-                    <li class="box">
+                    <li class="box" data-aos="fade-up" data-aos-delay="400">
                         <div class="box-img">
                             <img src="./img/news-icon.png" alt="컴패션 소식 아이콘">
                         </div>
@@ -499,7 +541,7 @@
         <!--page8-->
         <section id="page8" class="page page8 heightauto">
             <div class="wrap flex">
-                <div class="box m60">
+                <div class="box m60" data-aos="zoom-in-up">
                     <p class="box-text">
                         컴패션은<br>
                         <span class="po-color">후원금의 80% 이상을<br>
@@ -510,7 +552,7 @@
                         <img src="./img/graph-img.png" alt="후원금 사용원칙 그래프 이미지">
                     </div>
                 </div>
-                <p class="label-text">
+                <p class="label-text" data-aos="fade-in">
                     한국컴패션은 2003년 설립 때부터 세계 4대 회계법인인<br>
                     KPMG(삼정회계법인)의 철저한 외부 감사를 받아왔으며<br class="mo-br"> ‘공익법인회계기준’과 ‘사회복지법인 재무회계규칙’에 따라<br>
                     운영한 재무보고서와 감사보고서를 투명하게 공개하고 있습니다.<br>
@@ -518,73 +560,200 @@
             </div>
         </section>
         <!--page9-->
-         <section id="page9" class="page page9 heightauto bg-white">
+        <section id="page9" class="page page9 heightauto bg-white">
             <div class="wrap flex">
-                <div class="button-area">
+                <div class="button-area" data-aos="zoom-out-up">
                     <a class="b-btn" href="#" target="_blank">나와 함께 성장할<br class="mo-br"> 어린이 만나러 가기</a>
                 </div>
             </div>
         </section>
     </main>
+    <!--popup1-->
+    <div class="pop-up curriculum1">
+        <div class="wrap flex">
+            <div class="box">
+                <div class="box-wrap">
+                    <div class="btn-area">
+                        <button class="clo-btn"><i class="fa-solid fa-circle-xmark"></i></button>
+                    </div>
+                    <div class="box-text">
+                        <strong class="box-tit">
+                            0-1세(아기와 엄마 살리기)
+                        </strong>
+                        <p class="label-text">
+                            컴패션은 태아·영아 사망률이 높은 지역의 0-1세 태아·영아와 임산부 및 아기 엄마가 생존할 수 있도록 전인적 양육을 제공합니다.
+                        </p>
+                        <div class="box-list">
+                            <ul>
+                                <li>
+                                    <span>지적</span>
+                                    <p>가족계획 및 육아법 교육, 위생교육, 문맹퇴치 교육, 직업기술 교육, 모유수유 교육</p>
+                                </li>
+                                <li>
+                                    <span>신체적</span>
+                                    <p>예방접종, 영양식 및 비타민 제공, 치과 치료 및 건강검진, 응급 상황 시 의료 지원, 산전 관리 및 산파 지원</p>
+                                </li>
+                                <li>
+                                    <span>영적</span>
+                                    <p>그룹 성경공부, 예배 참여, 기도모임, 봉사활동</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--popup2-->
+    <div class="pop-up curriculum2">
+        <div class="wrap flex">
+            <div class="box">
+                <div class="box-wrap">
+                    <div class="btn-area">
+                        <button class="clo-btn"><i class="fa-solid fa-circle-xmark"></i></button>
+                    </div>
+                    <div class="box-text">
+                        <strong class="box-tit">
+                            2-5세
+                        </strong>
+                        <div class="box-list">
+                            <ul>
+                                <li>
+                                    <span>지적</span>
+                                    <p>내 몸의 감각 느끼기, 색과 모양 이해와 조합, 날씨, 동식물 등 지역사회 이해하기, 일의 도구 및 다양한 직업의 세계, 이야기하는 법, 자신의 이야기 말하기 등 (총 88과 레슨)</p>
+                                </li>
+                                <li>
+                                    <span>사회정서적</span>
+                                    <p>정체성, 감정 공유, 창의적 표현 등 자기 인식, 몸 소중히 하기, 이성 존중하기, 표정, 신체언어로 감정 표현하기, 좋은 친구되기, 도움 요청 방법 등 (총 84과 레슨)</p>
+                                </li>
+                                <li>
+                                    <span>신체적</span>
+                                    <p>오감 알고 소중히 하기, 깨끗한 손 씻기, 감기 예방, 운동하기, 안전하게 놀기, 물과 화재 안전 등 (총 86과 레슨)</p>
+                                </li>
+                                <li>
+                                    <span>영적</span>
+                                    <p>성경에 대한 소개, 성경 이야기, 미래를 위한 계획 등 (총 92과 레슨)</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+    <!--popup3-->
+    <div class="pop-up curriculum3">
+        <div class="wrap flex">
+            <div class="box">
+                <div class="box-wrap">
+                    <div class="btn-area">
+                        <button class="clo-btn"><i class="fa-solid fa-circle-xmark"></i></button>
+                    </div>
+                    <div class="box-text">
+                        <strong class="box-tit">
+                            6-8세
+                        </strong>
+                        <div class="box-list">
+                            <ul>
+                                <li>
+                                    <span>지적</span>
+                                    <p>재능과 은사 찾기, 비교와 대비, 분류, 연석성 찾기, 만들기 등, 가내 수입창출을 위한 동물사육 및 식물재배, 직업 체험을 위한 사업장 방문, 현명한 구매, 절약과 나눔, 예측하기, 읽은 이야기를 말로 이야기하기 등 (총 90과 레슨)</p>
+                                </li>
+                                <li>
+                                    <span>사회정서적</span>
+                                    <p>감정 구분하기, 강점과 약점 인지하기, 신체와 감정적 변화, 순결함, 거룩함에 대한 하나님의 계획, 대화의 기술, 갈등 관리, 협력하여 함께 놀기, 동료 중재하기 등 (총 88과 레슨)</p>
+                                </li>
+                                <li>
+                                    <span>신체적</span>
+                                    <p>신체 체계 알기, 건강한 식사 만들기, 치과 보건소 방문하기 등 건강을 위한 목표 설정, 해로운 동물, 식물 알기, 안전하게 노는 법 등 (총 88과 레슨)</p>
+                                </li>
+                                <li>
+                                    <span>영적</span>
+                                    <p>하나님의 특별한 사람, 성경 이야기, 하나님이 우리와 함께하시는 방법 등 (총 94과 레슨)</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <strong class="box-tit">
+                            9-11세
+                        </strong>
+                        <div class="box-list">
+                            <ul>
+                                <li>
+                                    <span>지적</span>
+                                    <p>재능과 은사 평가하기, 독서의 분석적 사고, 독해능력 향상을 위한 요약하기 등, 우리반 정원 가꾸기, 퇴비의 역할 등, 사업계획 짜기, 사업윤리 개념 이해하기, 필요와 욕구 구분하기, 예산 짜기, 새로운 정보에 대해 신중하게 반응하기 등 (총 92과 레슨)</p>
+                                </li>
+                                <li>
+                                    <span>사회정서적</span>
+                                    <p>공동체에서의 정체성, 감정 공유하기, 신체와 감정적 변화, 순결함, 거룩함에 대한 하나님의 계획, 갈등 해결 기술, 관심 주제 토론하기, 인내, 관용, 정직 등 자기 조절 훈련하기 등 (총 79과 레슨)</p>
+                                </li>
+                                <li>
+                                    <span>신체적</span>
+                                    <p>사춘기의 신체적 변화, 음식 안전과 위생절차, 건강한 생활습관, 위험한 약물과 도움이 되는 약물, 흡연, 술과 청소년 교육 등 (총 81과 레슨)</p>
+                                </li>
+                                <li>
+                                    <span>영적</span>
+                                    <p>공동체 섬기기, 서로 사랑하기, 성경 이야기, 다른 사람 위해 기도하기 등 (총 100과 레슨)</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <strong class="box-tit">
+                            9-11세
+                        </strong>
+                        <div class="box-list">
+                            <ul>
+                                <li>
+                                    <span>지적</span>
+                                    <p>시간관리 및 학습기술, 소득창출 방법, 일자리 확보 및 유지, 사업수완 기술, 재정의 관리 능력</p>
+                                </li>
+                                <li>
+                                    <span>사회정서적</span>
+                                    <p>이성교제에 대한 성경적 세계관, 가족 및 공동체의 역할, 건강한 내면의 아름다움, 리더십 개발 교육</p>
+                                </li>
+                                <li>
+                                    <span>신체적</span>
+                                    <p>응급치료, HIV/AIDS 예방 교육, 결혼에 대한 성경적 관점, 사춘기에 대한 준비</p>
+                                </li>
+                                <li>
+                                    <span>영적</span>
+                                    <p>하나님의 본성, 성경의 개관과 이야기, 성경공부</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </div>
+    <!--popup4-->
+    <div class="pop-up curriculum4">
+        <div class="wrap flex">
+            <div class="box">
+                <div class="box-wrap">
+                    <div class="btn-area">
+                        <button class="clo-btn"><i class="fa-solid fa-circle-xmark"></i></button>
+                    </div>
+                        <div class="box-text">
+                        <strong class="box-tit">
+                            12세 이상
+                        </strong>
+                        <div class="box-list">
+                            <ul>
+                                <li>
+                                    <span>My plan for tomorrow(자기주도플랜)</span>
+                                    <p>12세 이상 컴패션 청소년이 단계별 목표 설정, 자체 평가 양식, 1:1멘토링 등 구체적인 연간 목표와 계획 설정</p>
+                                </li>
+                                <li>
+                                    <span>청소년 직업훈련과 기술교육</span>
+                                    <p>국가, 지역, 개개인의 특성에 맞는 소득창출을 위한 다양한 기술교육, 직업훈련 등 제공</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--script-->
     <script src="./js/common.js"></script>
-    <script>
-        /*스크롤 시 header color 변경*/
-        function scrollHeaderChange() {
-            const page1 = $(".page1").offset().top - 1;
-            const page2 = $(".page2").offset().top - 1;
-            const page3 = $(".page3").offset().top - 1;
-            const page4 = $(".page4").offset().top - 1;
-            const page5 = $(".page5").offset().top - 1;
-            const page6 = $(".page6").offset().top - 1;
-            const page7 = $(".page7").offset().top - 1;
-            const page8 = $(".page8").offset().top - 1;
-            const page9 = $(".page9").offset().top - 1;
-
-            if (page9 <= $(window).scrollTop()) {
-                $("header").addClass("white");
-            } else if (page8 <= $(window).scrollTop()) {
-                $("header").addClass("white");
-            } else if (page7 <= $(window).scrollTop()) {
-                $("header").removeClass("white");
-            } else if (page6 <= $(window).scrollTop()) {
-                $("header").removeClass("white");
-            } else if (page5 <= $(window).scrollTop()) {
-                $("header").removeClass("white");
-            } else if (page4 <= $(window).scrollTop()) {
-                $("header").addClass("white");
-            } else if (page3 <= $(window).scrollTop()) {
-                $("header").removeClass("white");
-            } else if (page2 <= $(window).scrollTop()) {
-                $("header").addClass("white");
-            } else if (page1 <= $(window).scrollTop()) {
-                $("header").addClass("white");
-            } else {
-                $("header").removeClass("white");
-            }
-        }
-
-        scrollHeaderChange();
-        $(window).on("scroll", function(){
-            scrollHeaderChange();
-            console.log("내려가는중");
-        });
-
-        /*성장과정 슬라이드*/
-        var swiper = new Swiper(".process-Swiper", {
-          slidesPerView: "auto",
-          spaceBetween: 20,
-          autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-            },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-            },
-        });
-
-
-      </script>
 </body>
 </html>
