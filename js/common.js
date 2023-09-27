@@ -54,14 +54,30 @@ var swiper = new Swiper(".process-Swiper", {
 
 /*gsap - scroll effect*/
 //cover
-const cover = document.querySelector("#cover");
+const coverAni = gsap.timeline();
+coverAni
+.from("#cover .top-area", {
+    autoAlpha: 0,
+    duration: 0.4,
+    y: 50,
+})
+.from("#cover .title", {
+    autoAlpha: 0,
+    duration: 0.4,
+    y: 50,
+})
+.from("#cover .overview", {
+    autoAlpha: 0,
+    duration: 0.4,
+    scale: 0.5,
+})
 
 ScrollTrigger.create({
-    trigger: cover,
+    animation: coverAni,
+    trigger: "#cover",
     start: "top top",
     pin: true,
     pinSpacing: false,
-    toggleClass: "active",
 });
 
 //page1
@@ -182,7 +198,9 @@ AOS.init({
     duration: 500,
 });
 
+
 //popup
+
 $(".pop-up .clo-btn").on("click", function(){
     $(this).parents(".pop-up").removeClass("active");
     $("html, body").css("overflow-y" , "initial");

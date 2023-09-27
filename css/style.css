@@ -193,7 +193,6 @@ header.white .sub-logo {
     top: 120px;
     left: 0;
     width: 100%;
-    opacity: 0;
 }
 .cover .top-area > div > strong {
     font-size: 15px;
@@ -209,7 +208,6 @@ header.white .sub-logo {
 .cover .text-area {
     width: 100%;
     text-align: center;
-    opacity: 0;
 }
 .cover .page-text > span {
     margin-bottom: 5px;
@@ -259,7 +257,7 @@ header.white .sub-logo {
     font-weight: 300;
     opacity: 0.8;
 }
-.cover.active .top-area {
+/* .cover.active .top-area {
     animation: fadeInUp 0.5s ease forwards;
 }
 .cover.active .text-area {
@@ -267,7 +265,7 @@ header.white .sub-logo {
 }
 .cover.active .text-area.overview {
     animation: zoomIn 0.5s 0.4s ease forwards;
-}
+} */
 
 
 .page1 h1 {
@@ -732,12 +730,13 @@ header.white .sub-logo {
 }
 .pop-up::before {
     content: "";
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100%;
     background-color: rgba(0,0,0,0.1);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
+    overflow: hidden;
     z-index: 1;
 }
 .pop-up .wrap {
