@@ -207,7 +207,6 @@ $(".pop-up .clo-btn").on("click", function(){
 });
 $(".pop-up").on("click", function(e){
     if($(e.target).parents(".box").length < 1 && !$(e.target).hasClass(".box")) {
-        console.log("팝업이야!");
         $(".pop-up").removeClass("active");
         $("html, body").css("overflow-y" , "initial");
     }
