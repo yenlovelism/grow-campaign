@@ -164,7 +164,7 @@ header.white .sub-logo {
 .cover {
     background: url("../img/cover-bg-img.png") no-repeat center center;
     background-size: cover;
-    z-index: -1;
+    z-index: 0;
 }
 .cover::before {
     content: "";
@@ -176,11 +176,14 @@ header.white .sub-logo {
     background: rgba(0,0,0,0.2);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
+    z-index: 0;
 }
 .cover .wrap {
+    position: relative;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    z-index: 2;
 }
 .cover .top-area {
     position: absolute;
@@ -351,18 +354,21 @@ header.white .sub-logo {
 }
 .page3 .img-area img.heart {
     width: 20%;
+    min-width: 100px;
     z-index: 1;
 }
 .page3 .img-area img.left-hand {
     left: 27%;
     bottom: 12%;
     width: 30%;
+    min-width: 200px;
     z-index: 0;
 }
 .page3 .img-area img.right-hand {
     right: 27%;
     top: 10%;
     width: 30%;
+    min-width: 200px;
     z-index: 0;
 }
 
@@ -858,6 +864,12 @@ header.white .sub-logo {
         width: 250px;
         height: 215px;
     }
+    .page3 .img-area img.right-hand {
+        top: 25%;
+    }
+    .page3 .img-area img.left-hand {
+        bottom: 30%;
+    }
     .page4 .img-area > ul > li {
         width: 250px;
         height: 250px;
@@ -897,6 +909,12 @@ header.white .sub-logo {
         row-gap: 5px;
         align-items: flex-start;
     }
+    .page3 .img-area img.right-hand {
+        top: 35%;
+    }
+    .page3 .img-area img.left-hand {
+        bottom: 35%;
+    }
     .page5 .wrap {
         margin: 0 auto;
         width: 95%;
@@ -933,7 +951,7 @@ header.white .sub-logo {
         display: block;
     }
     .page.heightauto .wrap {
-        padding: 100px 0;
+        padding: 150px 0;
     }
     .cover .top-area {
         top: 100px
@@ -946,6 +964,12 @@ header.white .sub-logo {
     }
     .page1 .img-area > ul > li:nth-child(odd) {
         right: 30%;
+    }
+    .page3 .img-area img.right-hand {
+        right: 20%;
+    }
+    .page3 .img-area img.left-hand {
+        left: 20%;
     }
     .page6 .text-area .box,
     .page6 .text-area .box::before {

@@ -76,7 +76,7 @@ page1Ani
     duration: 5,
     yPercent: -110,
     ease: "slow(0.7, 0.7, false)"
-});
+},"-=2");
 
 ScrollTrigger.create({
     animation: page1Ani,
