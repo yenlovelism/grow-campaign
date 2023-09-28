@@ -72,11 +72,6 @@ coverAni
     duration: 0.4,
     y: 50,
 })
-.from("#cover .overview", {
-    autoAlpha: 0,
-    duration: 0.4,
-    scale: 0.5,
-})
 
 ScrollTrigger.create({
     animation: coverAni,
