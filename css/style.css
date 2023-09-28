@@ -1067,6 +1067,9 @@ header.white .sub-logo {
         width: 100%;
         align-items: flex-end;
     }
+    .pop-up .box {
+        border-radius: 15px 15px 0 0;
+    }
     .pop-up .box .btn-area {
         padding: 15px 15px 10px 0;
     }
