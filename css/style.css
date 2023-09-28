@@ -227,28 +227,45 @@ header.white .sub-logo {
     bottom: 30px;
     left: 0;
     width: 100%;
-    max-height: 170px;
     text-align: left;
     border-top: 1px solid var(--white);
-    overflow: auto;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
 }
-.cover .text-area.overview::-webkit-scrollbar {
-    width: 8px;
-    background-color: transparent;
+.cover .text-area.overview::before {
+    content: "";
+    position: absolute;
+    bottom: calc(-100% - 100px);
+    left: -10%;
+    width: 120%;
+    height: calc(100% + 60px);
+    background: #5e86b7;
+    transition: all 0.4s ease-in-out;
 }
-.cover .text-area.overview::-webkit-scrollbar-track {
-    background-color: rgba(255,255,255,0.3);
-    border-radius: 8px;
-    border: 2px solid rgba(255,255,255,0.3);
+.cover .text-area.overview.on::before {
+    bottom: -60px;
 }
-.cover .text-area.overview::-webkit-scrollbar-thumb {
-    width: 6px;
-    background-color: rgba(255,255,255,0.6);
-    border-radius: 8px;
+.cover .text-area.overview .view-btn {
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    width: 40px;
+    height: 30px;
+    text-align: right;
+    font-size: 16px;
+}
+.cover .text-area.overview .view-btn i::before {
+    content: "\f077";
+}
+.cover .text-area.overview.on .view-btn i::before {
+    content: "\f078";
 }
 .cover .text-area.overview .page-text > strong {
+    position: relative;
     font-size: 16px;
     font-weight: 500;
+    z-index: 1;
 }
 .cover .text-area.overview .page-text > p {
     margin-top: 3px;
@@ -882,6 +899,16 @@ header.white .sub-logo {
 @media all and (max-width: 1260px) {
     .wrap {
         font-size: 0.8em;
+    }
+    .cover .text-area.overview {
+        max-height: 120px;
+    }
+    .cover .text-area.overview.on {
+        max-height: 100%;
+        overflow: initial;
+    }
+    .cover .text-area.overview .view-btn {
+        display: block;
     }
     .page1 .bubble-box {
         width: 250px;

@@ -38,6 +38,12 @@ $(window).on("scroll", function(){
     scrollHeaderChange();
 });
 
+/*cover overview view-btn*/
+$(".cover .view-btn").on("click", function(){
+    $(".cover .overview").toggleClass("on");
+});
+
+
 /*성장과정 슬라이드*/
 var swiper = new Swiper(".process-Swiper", {
     slidesPerView: "auto",
