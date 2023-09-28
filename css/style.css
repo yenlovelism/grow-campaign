@@ -231,7 +231,7 @@ header.white .sub-logo {
     border-top: 1px solid var(--white);
     overflow: hidden;
     opacity: 0;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.4s ease-in-out;
     animation: zoomIn 0.4s ease 0.4s forwards;
 }
 .cover .text-area.overview::before {
@@ -242,7 +242,7 @@ header.white .sub-logo {
     width: 120%;
     height: calc(100% + 60px);
     background: #5e86b7;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 .cover .text-area.overview.on::before {
     bottom: -60px;
